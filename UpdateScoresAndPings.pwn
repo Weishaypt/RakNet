@@ -6,9 +6,9 @@ public OnIncomingRPC(playerid, rpcid, BitStream:bs)
         case 105: //UpdateScoresAndPings
         {
 
-			      if((gettime()-UpdateScoreAndPing[playerid]) < 6) printf("[%d] возможно использует CR-MP Trainer, Project Armagedon v1-4", playerid);
+			if((gettime()-UpdateScoreAndPing[playerid]) < 6) printf("[%d] возможно использует CR-MP Trainer, Project Armagedon v1-4", playerid);
 			
-			      UpdateScoreAndPing[playerid] = gettime();
+        	UpdateScoreAndPing[playerid] = gettime();
         }
     }
 
